@@ -30,7 +30,7 @@ public class CarShop {
         return sumCarPrice;
     }
 
-    int numberOfCarsCheaperThan(int price) {
+    public int numberOfCarsCheaperThan(int price) {
         int numberOfCarsCheaperThan = 0;
         for (Car car : cars) {
             if (car.getPrice() <= price) {
@@ -40,10 +40,10 @@ public class CarShop {
         return numberOfCarsCheaperThan;
     }
 
-    List<Car> carsWithBrand(String brand) {
+    public List<Car> carsWithBrand(String brand) {
         List<Car> carsWithBrand = new ArrayList<>();
         for (Car car : cars) {
-            if (car.getBrand().equals(brand)) {
+            if (brand.equals(car.getBrand())) {
                 carsWithBrand.add(car);
             }
         }

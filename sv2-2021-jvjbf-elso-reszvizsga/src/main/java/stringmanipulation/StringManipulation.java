@@ -3,10 +3,10 @@ package stringmanipulation;
 public class StringManipulation {
 
     public String everyEvenCharacter(String s) {
-        String everyEvenCharacter = "";
+        StringBuilder everyEvenCharacter = new StringBuilder();
         for (int i = 0; i < s.length(); i += 2) {
-            everyEvenCharacter += s.charAt(i);
+            everyEvenCharacter.append(s.charAt(i));
         }
-        return everyEvenCharacter;
+        return everyEvenCharacter.toString();
     }
 }
